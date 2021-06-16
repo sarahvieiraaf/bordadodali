@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Quem Somos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/meuestilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Sarah Vieira, Stefany Rodrigues, Hyana Espindola, Leticia Carapina e Sirley Lima">
+	<meta name="keywords" content="Bordados Artesanais, Bordados Personalizados, Bordados Manuais">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap">
+</head>
+
+<body>
+<!--conteúdo-->
+	<div class="w3-bar navbar w3-padding-16">
+  		<a href="index.html" class="w3-bar-item w3-left"><img src="imagens/bordadodali.png" width="80px"></a>
+  		<a href="contato.html" class="w3-bar-item navbarbuttom w3-hide-small w3-right w3-margin-top">Contato</a>
+  		<a href="quemsomos.html" class="w3-bar-item navbarbuttom w3-hide-small w3-right w3-margin-top">Quem somos</a>
+  		<a href="comoencomendar.html" class="w3-bar-item navbarbuttom w3-hide-small w3-right w3-margin-top">Como encomendar</a>
+  		<a href="bordados.html" class="w3-bar-item navbarbuttom w3-hide-small w3-right w3-margin-top">Bordados</a>
+  		<a href="javascript:void(0)" class="w3-bar-item w3-xxlarge navbarbuttom w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block navbarmobile w3-hide w3-hide-large w3-hide-medium w3-padding-16 w3-xxlarge">
+  		<a href="bordados.html" class="w3-bar-item navbarbuttom">Bordados</a>
+ 		<a href="comoencomendar.html" class="w3-bar-item navbarbuttom">Como encomendar</a>
+  		<a href="quemsomos.html" class="w3-bar-item navbarbuttom">Quem somos</a>
+  		<a href="contato.html" class="w3-bar-item navbarbuttom">Contato</a>
+		</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+	<header class="w3-container quemsomos">
+  <div padding-top="20px">
+    <h1>Quem somos?</h1>
+    <h4>Conheça a história da Bordado da Li</h4>
+  </div>
+	</header>
+
+<div class="w3-container quemsomoscont">
+  
+  <div class="w3-half">
+    <img src="imagens/li.png" class="fotoli w3-image" width="100%" align="center" margin="20 0 20 20">
+  </div>
+
+   <div class="w3-half textoli" padding-top="20px" align="left">
+    <h3 style="color:#225926"><b>Oi, meu nome é Lívia Rodrigues!</b></h3>
+    <h5>Minha mãe comenta que na infância eu sempre gostava de brincar com agulhas enquanto ela costurava, mas nunca tive experiência com nenhum tipo de costura.</h5><br>
+    <h5>Foi só em 2019 que eu descobri o bordado, quando vi um vídeo na web que me despertou o interesse em aprender. Com o apoio da minha família fiz as primeiras peças, como um teste para descobrir se eu seria realmente capaz.</h5><br>
+    <h5>Comecei fazendo bordados para presentear meus familiares e fui postando nas redes sociais até que apareceu uma primeira cliente, então vi que poderia iniciar um negócio.</h5><br>
+    <h5><b>Assim, em janeiro de 2020, nasceu a Bordado da Li,</b> que hoje é meu trabalho principal e minha fonte de renda.</h5>
+  </div>
+
+</div>
+
+<footer>
+  <h2><a href="index.html" class="link2">Bordado da Li</a></h2>
+  <a href="https://www.instagram.com/bordadodali/" target="_blank" class="ig"><img src="imagens/ig.svg" width="25px"></a> |
+  <a href="https://api.whatsapp.com/send?phone=5511976176919" target="_blank" class="iconsfooter"><img src="imagens/wpp.svg" width="25px"></a> |
+  <a href="mailto:bordadodali5@gmail.com" target="_blank" class="iconsfooter"><img src="imagens/email.svg" width="25px"></a>
+  <p><a href="bordados.html" class="link">Bordados</a></p>
+  <p><a href="comoencomendar.html" class="link">Como encomendar</a></p>
+    <p><a href="quemsomos.html" class="link">Quem somos</a></p>
+    <p><a href="contato.html" class="link">Contato</a></p>
+</footer>
+
+</body>
+</html>

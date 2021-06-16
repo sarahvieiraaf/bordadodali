@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Bordado da Li</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/meuestilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Sarah Vieira, Stefany Rodrigues, Hyana Espindola, Leticia Carapina e Sirley Lima">
+	<meta name="keywords" content="Bordados Artesanais, Bordados Personalizados, Bordados Manuais">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap">
+</head>
+
+<body>
+<!--conteúdo-->
+	<div class="w3-bar navbar w3-padding-16">
+  		<a href="index.html" class="w3-bar-item w3-left"><img src="imagens/bordadodali.png" width="80px"></a>
+  		<a href="contato.html" class="w3-bar-item navbarbuttom w3-hide-small w3-right w3-margin-top">Contato</a>
+  		<a href="quemsomos.html" class="w3-bar-item navbarbuttom w3-hide-small w3-right w3-margin-top">Quem somos</a>
+  		<a href="comoencomendar.html" class="w3-bar-item navbarbuttom w3-hide-small w3-right w3-margin-top">Como encomendar</a>
+  		<a href="bordados.html" class="w3-bar-item navbarbuttom w3-hide-small w3-right w3-margin-top">Bordados</a>
+  		<a href="javascript:void(0)" class="w3-bar-item w3-xxlarge navbarbuttom w3-right w3-hide-large w3-hide-medium" width="50px" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block navbarmobile w3-hide w3-hide-large w3-hide-medium w3-padding-16 w3-xxlarge">
+  		<a href="bordados.html" class="w3-bar-item navbarbuttom">Bordados</a>
+ 		<a href="comoencomendar.html" class="w3-bar-item navbarbuttom">Como encomendar</a>
+  		<a href="quemsomos.html" class="w3-bar-item navbarbuttom">Quem somos</a>
+  		<a href="contato.html" class="w3-bar-item navbarbuttom">Contato</a>
+		</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<header id="banner" class="w3-container">
+	<div class="w3-half">
+		<h1 style="margin-top:50px">Bordados artesanais feitos de forma personalizada, repletos de amor!</h1>
+		<h4>A agenda está aberta! Presenteie alguém ou deixe seus ambientes super aconchegantes</h4>
+		<a href="comoencomendar.html#form"><button class="buttonbanner">
+			Faça um orçamento
+		</button></a>
+	</div>
+	
+	<div class="w3-half w3-image">
+		<img src="imagens/banner.png" width="100%" align="right" margin="20 0 50 20" style="margin-bottom:30px">
+	</div>
+</header>
+
+<div class="slider">
+		<h2>Conheça os produtos exclusivos da Bordado da Li</h2>
+
+		<div class="slideshow-container">
+
+<div class="mySlides fade slidercontainer">
+  <img src="imagens/retrato.png" class="imageslider" style="width:100%">
+  <div class="middle">
+   <a href="bordados.html#retrato"><button class="textslider">Retrato</button></a>
+  </div>
+</div>
+
+
+<div class="mySlides fade slidercontainer">
+  <img src="imagens/frase.png" class="imageslider" style="width:100%">
+  <div class="middle">
+  <a href="bordados.html#frases"><button class="textslider">Frases</button></a>
+  </div>
+</div>
+
+<div class="mySlides fade slidercontainer">
+  <img src="imagens/maternidade.png" class="imageslider" style="width:100%">
+  <div class="middle">
+   <a href="bordados.html#maternidade"><button class="textslider">Porta-maternidade</button></a>
+  </div>
+</div>
+
+<div class="mySlides fade slidercontainer">
+  <img src="imagens/alianca.png" class="imageslider" style="width:100%">
+  <div class="middle">
+   <a href="bordados.html#alianca"><button class="textslider">Porta-aliança</button></a>
+  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>  
+</div>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<div class="testimonials">
+		<h2>O que os clientes estão falando?</h2>
+</div>
+
+<div class="container w3-third">
+  <div class="testimonial-card">
+    <div class="text">Li, não me canso de agradecer por esse trabalho. Por ter traduzido tudo o que eu queria pra esse casal de amigos tão especiais! Sou fã do seu trabalho!<i class="fas fa-quote-right quote"></i></div>
+    
+    
+    
+    <div class="footer">
+      <div class="image1">
+       
+      </div>
+       <h3 class='person'>Camila</h3>
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="container w3-third">
+  <div class="testimonial-card">
+    <div class="text2">Eu amei demais, talento incrível! Obrigada por ter feito parte desse momento tão importante para nós! <i class="fas fa-quote-right quote"></i></div>
+    
+    
+    
+    <div class="footer">
+      <div class="image2">
+       
+      </div>
+       <h3 class='person'>Sabrina</h3>
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="container w3-third">
+  <div class="testimonial-card">
+    <div class="text3">Obrigada por sentir a sensibilidade e eternizar este momento lindo, de uma forma tão única. Confesso que tem um enorme significado em minha vida.<i class="fas fa-quote-right quote"></i></div>
+    
+    
+    
+    <div class="footer">
+      <div class="image3">
+       
+      </div>
+       <h3 class='person'>Camila</h3>
+      
+      
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-padding-48 encomendar1">
+<h2 style="margin-top:48px;">Tenha os produtos Bordado da Li em sua casa, com muito amor e afeto</h2>
+		<a href="comoencomendar.html#form"><button class="buttonencomenda">
+			Faça um orçamento
+		</button></a>
+</div>
+
+<footer>
+	<h2><a href="index.html" class="link2">Bordado da Li</a></h2>
+	<a href="https://www.instagram.com/bordadodali/" target="_blank" class="ig"><img src="imagens/ig.svg" width="25px"></a> |
+	<a href="https://api.whatsapp.com/send?phone=5511976176919" target="_blank" class="iconsfooter"><img src="imagens/wpp.svg" width="25px"></a> |
+	<a href="mailto:bordadodali5@gmail.com" target="_blank" class="iconsfooter"><img src="imagens/email.svg" width="25px"></a>
+	<p><a href="bordados.html" class="link">Bordados</a></p>
+ 	<p><a href="comoencomendar.html" class="link">Como encomendar</a></p>
+  	<p><a href="quemsomos.html" class="link">Quem somos</a></p>
+  	<p><a href="contato.html" class="link">Contato</a></p>
+</footer>
+
+</body>
+
+</html>
